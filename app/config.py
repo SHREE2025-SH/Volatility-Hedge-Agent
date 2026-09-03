@@ -1,6 +1,8 @@
 import os
-from dotenv import load_dotenv
-
+import streamlit as st
+for key in ["ALPACA_API_KEY", "ALPACA_SECRET_KEY", "GEMINI_API_KEY"]:
+    if key in st.secrets:
+        os.environ[key] = st.secrets[key]
 load_dotenv()
 
 
