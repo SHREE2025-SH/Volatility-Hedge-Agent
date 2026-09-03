@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 import os
 import streamlit as st
 for key in ["ALPACA_API_KEY", "ALPACA_SECRET_KEY", "GEMINI_API_KEY"]:
